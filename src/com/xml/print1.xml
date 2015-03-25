@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="GBK"?>
+<Document>
+	<PageSetUp>
+		<Width>190000</Width>
+		<Height>225000</Height>
+		<Left>4500</Left>
+		<Right>0</Right>
+		<Top>5000</Top>
+		<Bottom>0</Bottom>
+		<Header>0</Header>
+		<Footer>0</Footer>
+	</PageSetUp>
+	<DefaultFont>
+		<Height>13</Height>
+		<Name>宋体</Name>
+		<Style>fsNormal</Style>
+	</DefaultFont>
+	<Page>
+		<CredenceTitle Left="85000" Right="30000000" Top="0" Bottom="30000000">电汇凭证（回单）</CredenceTitle>
+		<OrgCodeText Left="15000" Right="30000000" Top="5000" Bottom="30000000">交易机构：</OrgCodeText>
+		<OrgCode Left="35000" Right="30000000" Top="5000" Bottom="30000000">02400</OrgCode>
+		<WorkDtText Left="65000" Right="30000000" Top="5000" Bottom="30000000">交易时间：</WorkDtText>
+		<WorkDt Left="85000" Right="30000000" Top="5000" Bottom="30000000">2014-11-13 15:25:07</WorkDt>
+		<GylshText Left="130000" Right="30000000" Top="5000" Bottom="30000000">柜员流水号：</GylshText>
+		<Gylsh Left="155000" Right="30000000" Top="5000" Bottom="30000000">1930</Gylsh>
+		<SttlmprtyText Left="15000" Right="30000000" Top="10000" Bottom="30000000">业务优先级：</SttlmprtyText>
+		<Sttlmprty Left="40000" Right="30000000" Top="10000" Bottom="30000000">普通</Sttlmprty>
+		<ConsigndateText Left="95000" Right="30000000" Top="10000" Bottom="30000000">委托日期：</ConsigndateText>
+		<ConsigndateOfYear Left="115000" Right="30000000" Top="10000" Bottom="30000000">2014</ConsigndateOfYear>
+		<ConsigndateOfYearText Left="125000" Right="30000000" Top="10000" Bottom="30000000">年
+		</ConsigndateOfYearText>
+		<ConsigndateOfMonth Left="130000" Right="30000000" Top="10000" Bottom="30000000">11</ConsigndateOfMonth>
+		<ConsigndateOfMonthText Left="135000" Right="30000000" Top="10000" Bottom="30000000">月
+		</ConsigndateOfMonthText>
+		<ConsigndateOfDay Left="140000" Right="30000000" Top="10000" Bottom="30000000">13</ConsigndateOfDay>
+		<ConsigndateOfDayText Left="145000" Right="30000000" Top="10000" Bottom="30000000">日</ConsigndateOfDayText>
+		<DbtrAcctText Left="15000" Right="30000000" Top="15000" Bottom="30000000">汇款人账号：</DbtrAcctText>
+		<DbtrAcct Left="40000" Right="30000000" Top="15000" Bottom="30000000">313234001089</DbtrAcct>
+		<DbtrNmText Left="15000" Right="30000000" Top="20000" Bottom="30000000">汇款人名称：</DbtrNmText>
+		<DbtrNm Left="40000" Right="30000000" Top="20000" Bottom="30000000">15652348413</DbtrNm>
+		<CdtrAcctText Left="15000" Right="30000000" Top="25000" Bottom="30000000">收款人账号：</CdtrAcctText>
+		<CdtrAcct Left="40000" Right="30000000" Top="25000" Bottom="30000000">1</CdtrAcct>
+		<CdtrNmText Left="15000" Right="30000000" Top="30000" Bottom="30000000">收款人名称：</CdtrNmText>
+		<CdtrNm Left="40000" Right="30000000" Top="30000" Bottom="30000000">1</CdtrNm>
+		<DbtrIssuerNMText Left="15000" Right="30000000" Top="35000" Bottom="30000000">汇出行名称：</DbtrIssuerNMText>
+		<DbtrIssuerNM Left="40000" Right="30000000" Top="35000" Bottom="30000000">朝阳银行营业部</DbtrIssuerNM>
+		<CdtrIssuerNMText Left="15000" Right="30000000" Top="40000" Bottom="30000000">汇入行名称：</CdtrIssuerNMText>
+		<CdtrIssuerNM Left="40000" Right="30000000" Top="40000" Bottom="30000000">朝阳银行北大街支行</CdtrIssuerNM>
+		<AmountOfUpperText Left="15000" Right="30000000" Top="45000" Bottom="30000000">大写金额：</AmountOfUpperText>
+		<AmountOfUpper Left="35000" Right="30000000" Top="45000" Bottom="30000000">壹佰壹拾壹元整</AmountOfUpper>
+		<AmountOfLowerText Left="15000" Right="30000000" Top="50000" Bottom="30000000">小写金额：</AmountOfLowerText>
+		<AmountOfLower Left="35000" Right="30000000" Top="50000" Bottom="30000000">111.00</AmountOfLower>
+		<UstrdText Left="15000" Right="30000000" Top="55000" Bottom="30000000">附加信息及用途：</UstrdText>
+		<Ustrd Left="45000" Right="190000" Top="55000" Bottom="30000000">1111</Ustrd>
+		<AuthenticateIdText Left="15000" Right="30000000" Top="65000" Bottom="30000000">授权员：</AuthenticateIdText>
+		<CheckerText Left="80000" Right="30000000" Top="65000" Bottom="30000000">复核员：</CheckerText>
+		<OperatorText Left="130000" Right="30000000" Top="65000" Bottom="30000000">柜员号：</OperatorText>
+		<Operator Left="155000" Right="30000000" Top="65000" Bottom="30000000">0108</Operator>
+		<BankNameTitle Left="15000" Right="30000000" Top="100000" Bottom="30000000">朝阳银行</BankNameTitle>
+		<CredenceTitle Left="80000" Right="30000000" Top="100000" Bottom="30000000">结算收费</CredenceTitle>
+		<OrgCodeText Left="15000" Right="30000000" Top="107500" Bottom="30000000">交易机构：</OrgCodeText>
+		<OrgCode Left="35000" Right="30000000" Top="107500" Bottom="30000000">02400</OrgCode>
+		<ConsigndateText Left="75000" Right="30000000" Top="107500" Bottom="30000000">日期：</ConsigndateText>
+		<Consigndate Left="85000" Right="30000000" Top="107500" Bottom="30000000">2014-11-13</Consigndate>
+		<TransTimeText Left="110000" Right="30000000" Top="107500" Bottom="30000000">时间：</TransTimeText>
+		<TransTime Left="120000" Right="30000000" Top="107500" Bottom="30000000">15:25:07</TransTime>
+		<PrintNoText Left="140000" Right="30000000" Top="107500" Bottom="30000000">流水号：</PrintNoText>
+		<PrintNo Left="155000" Right="30000000" Top="107500" Bottom="30000000">1930</PrintNo>
+		<TrNmText Left="15000" Right="30000000" Top="115500" Bottom="30000000">缴费单位：</TrNmText>
+		<TrNm Left="35000" Right="30000000" Top="115500" Bottom="30000000">15652348413</TrNm>
+		<WaiveText Left="110000" Right="30000000" Top="115500" Bottom="30000000">收费方式：</WaiveText>
+		<Waive Left="129000" Right="30000000" Top="115500" Bottom="30000000">现金</Waive>
+		<TrAcctText Left="15000" Right="30000000" Top="123500" Bottom="30000000">缴费账号：</TrAcctText>
+		<TrAcct Left="35000" Right="30000000" Top="123500" Bottom="30000000">313234001089</TrAcct>
+		<ChargeText Left="15000" Right="30000000" Top="131500" Bottom="30000000">小额汇兑手续费：</ChargeText>
+		<Charge Left="47000" Right="30000000" Top="131500" Bottom="30000000">￥0.56</Charge>
+		<TotalAmountText Left="15000" Right="30000000" Top="139500" Bottom="30000000">收费总额：</TotalAmountText>
+		<TotalAmount Left="35000" Right="30000000" Top="139500" Bottom="30000000">￥0.56</TotalAmount>
+		<AmountOfUpperText Left="15000" Right="30000000" Top="147500" Bottom="30000000">大 写：</AmountOfUpperText>
+		<AmountOfUpper Left="35000" Right="30000000" Top="147500" Bottom="30000000">伍角陆分</AmountOfUpper>
+		<PersonText Left="110000" Right="30000000" Top="147500" Bottom="30000000">本人签字：</PersonText>
+		<CheckerIdText Left="75000" Right="30000000" Top="162500" Bottom="30000000">复核员：</CheckerIdText>
+		<OperatorText Left="110000" Right="30000000" Top="162500" Bottom="30000000">柜员号：</OperatorText>
+		<Operator Left="127000" Right="30000000" Top="162500" Bottom="30000000">0108</Operator>
+	</Page>
+</Document>
