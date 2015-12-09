@@ -1,84 +1,11 @@
-<?xml version="1.0" encoding="GBK"?>
+<?xml version="1.0" encoding="gbk"?>
 <Document>
-	<PageSetUp>
-		<Width>190000</Width>
-		<Height>285000</Height>
-		<Left>4500</Left>
-		<Right>0</Right>
-		<Top>5000</Top>
-		<Bottom>0</Bottom>
-		<Header>0</Header>
-		<Footer>0</Footer>
-	</PageSetUp>
-	<DefaultFont>
-		<Height>13</Height>
-		<Name>宋体</Name>
-		<Style>fsNormal</Style>
-	</DefaultFont>
-	<Page>
-		<CredenceTitle Left="50000" Right="30000000" Top="2500" Bottom="30000000">朝阳银行挂账提入借方传票（大额）</CredenceTitle>
-		<OrgCodeText Left="15000" Right="30000000" Top="10000" Bottom="30000000">交易机构：</OrgCodeText>
-		<OrgCode Left="33000" Right="30000000" Top="10000" Bottom="30000000">02400</OrgCode>
-		<CoreDateText Left="60000" Right="30000000" Top="10000" Bottom="30000000">日期：</CoreDateText>
-		<CoreDate Left="70000" Right="30000000" Top="10000" Bottom="30000000">2014-11-07</CoreDate>
-		<CoreIdText Left="100000" Right="30000000" Top="10000" Bottom="30000000">流水号：</CoreIdText>
-		<CoreId Left="113000" Right="30000000" Top="10000" Bottom="30000000">1954</CoreId>
-		<MsgTpIdText Left="15000" Right="30000000" Top="15000" Bottom="30000000">交易名称：</MsgTpIdText>
-		<MsgTpId Left="33000" Right="30000000" Top="15000" Bottom="30000000">大额来帐挂账提入</MsgTpId>
-		<TxidText Left="15000" Right="30000000" Top="20000" Bottom="30000000">支付序号：</TxidText>
-		<Txid Left="33000" Right="30000000" Top="20000" Bottom="30000000">2014102090028898</Txid>
-		<AccNoText Left="15000" Right="30000000" Top="25000" Bottom="30000000">科目号：</AccNoText>
-		<AccNo Left="33000" Right="30000000" Top="25000" Bottom="30000000">22410703</AccNo>
-		<AcctNameText Left="15000" Right="30000000" Top="30000" Bottom="30000000">户名：</AcctNameText>
-		<AmountText Left="15000" Right="30000000" Top="35000" Bottom="30000000">金额：</AmountText>
-		<Amount Left="33000" Right="30000000" Top="35000" Bottom="30000000">1,000,000.00</Amount>
-		<WarrantyIdText Left="15000" Right="30000000" Top="40000" Bottom="30000000">授权人：</WarrantyIdText>
-		<WarrantyId Left="33000" Right="30000000" Top="40000" Bottom="30000000">0107</WarrantyId>
-		<SigneridText Left="100000" Right="30000000" Top="40000" Bottom="30000000">操作员：</SigneridText>
-		<Signerid Left="113000" Right="30000000" Top="40000" Bottom="30000000">0108</Signerid>
-		<CredenceTitle Left="50000" Right="30000000" Top="100000" Bottom="30000000">朝阳银行挂账提入贷方传票（大额）</CredenceTitle>
-		<OrgCodeText Left="15000" Right="30000000" Top="107500" Bottom="30000000">交易机构：</OrgCodeText>
-		<OrgCode Left="33000" Right="30000000" Top="107500" Bottom="30000000">02400</OrgCode>
-		<CoreDateText Left="60000" Right="30000000" Top="107500" Bottom="30000000">日期：</CoreDateText>
-		<CoreDate Left="70000" Right="30000000" Top="107500" Bottom="30000000">2014-11-07</CoreDate>
-		<CoreIdText Left="100000" Right="30000000" Top="107500" Bottom="30000000">流水号：</CoreIdText>
-		<CoreId Left="113000" Right="30000000" Top="107500" Bottom="30000000">1954</CoreId>
-		<MsgTpIdText Left="15000" Right="30000000" Top="112500" Bottom="30000000">交易名称：</MsgTpIdText>
-		<MsgTpId Left="33000" Right="30000000" Top="112500" Bottom="30000000">大额来帐挂账提入</MsgTpId>
-		<TxidText Left="15000" Right="30000000" Top="117500" Bottom="30000000">支付序号：</TxidText>
-		<Txid Left="33000" Right="30000000" Top="117500" Bottom="30000000">2014102090028898</Txid>
-		<AccNoText Left="15000" Right="30000000" Top="122500" Bottom="30000000">账号：</AccNoText>
-		<AccNo Left="33000" Right="30000000" Top="122500" Bottom="30000000">6210740112001801544</AccNo>
-		<AcctNameText Left="15000" Right="30000000" Top="127500" Bottom="30000000">户名：</AcctNameText>
-		<AcctName Left="33000" Right="30000000" Top="127500" Bottom="30000000">才逸宁</AcctName>
-		<AmountText Left="15000" Right="30000000" Top="132500" Bottom="30000000">金额：</AmountText>
-		<Amount Left="33000" Right="30000000" Top="132500" Bottom="30000000">1,000,000.00</Amount>
-		<WarrantyIdText Left="15000" Right="30000000" Top="137500" Bottom="30000000">授权人：</WarrantyIdText>
-		<WarrantyId Left="33000" Right="30000000" Top="137500" Bottom="30000000">0107</WarrantyId>
-		<SigneridText Left="100000" Right="30000000" Top="137500" Bottom="30000000">操作员：</SigneridText>
-		<Signerid Left="113000" Right="30000000" Top="137500" Bottom="30000000">0108</Signerid>
-		<CredenceTitle Left="50000" Right="30000000" Top="197500" Bottom="30000000">朝阳银行挂账提入客户回单</CredenceTitle>
-		<OrgCodeText Left="15000" Right="30000000" Top="205000" Bottom="30000000">交易机构：</OrgCodeText>
-		<OrgCode Left="33000" Right="30000000" Top="205000" Bottom="30000000">02400</OrgCode>
-		<CoreDateText Left="60000" Right="30000000" Top="205000" Bottom="30000000">日期：</CoreDateText>
-		<CoreDate Left="70000" Right="30000000" Top="205000" Bottom="30000000">2014-11-07</CoreDate>
-		<CoreIdText Left="100000" Right="30000000" Top="205000" Bottom="30000000">流水号：</CoreIdText>
-		<CoreId Left="113000" Right="30000000" Top="205000" Bottom="30000000">1954</CoreId>
-		<MsgTpIdText Left="15000" Right="30000000" Top="210000" Bottom="30000000">交易名称：</MsgTpIdText>
-		<MsgTpId Left="33000" Right="30000000" Top="210000" Bottom="30000000">大额来帐挂账提入</MsgTpId>
-		<TxidText Left="15000" Right="30000000" Top="215000" Bottom="30000000">支付序号：</TxidText>
-		<Txid Left="33000" Right="30000000" Top="215000" Bottom="30000000">2014102090028898</Txid>
-		<AccNoText Left="15000" Right="30000000" Top="220000" Bottom="30000000">账号：</AccNoText>
-		<AccNo Left="33000" Right="30000000" Top="220000" Bottom="30000000">6210740112001801544</AccNo>
-		<AcctNameText Left="15000" Right="30000000" Top="225000" Bottom="30000000">户名：</AcctNameText>
-		<AcctName Left="33000" Right="30000000" Top="225000" Bottom="30000000">才逸宁</AcctName>
-		<OldacctnmText Left="15000" Right="30000000" Top="230000" Bottom="30000000">原汇款人名称：</OldacctnmText>
-		<Oldacctnm Left="43000" Right="30000000" Top="230000" Bottom="30000000">才逸宁</Oldacctnm>
-		<AmountText Left="15000" Right="30000000" Top="235000" Bottom="30000000">金额：</AmountText>
-		<Amount Left="33000" Right="30000000" Top="235000" Bottom="30000000">1,000,000.00</Amount>
-		<WarrantyIdText Left="15000" Right="30000000" Top="240000" Bottom="30000000">授权人：</WarrantyIdText>
-		<WarrantyId Left="33000" Right="30000000" Top="240000" Bottom="30000000">0107</WarrantyId>
-		<SigneridText Left="100000" Right="30000000" Top="240000" Bottom="30000000">操作员：</SigneridText>
-		<Signerid Left="113000" Right="30000000" Top="240000" Bottom="30000000">0108</Signerid>
-	</Page>
+	<ResponseHead>
+		<Source></Source>
+		<Destination></Destination>
+		<MessageId></MessageId>
+		<SendDateTime>2015-10-28 17:40:01</SendDateTime>
+		<ProcessCode>处理失败</ProcessCode>
+		<ProcessDes>交易配置文件【cs122a】.xml不存在</ProcessDes>
+	</ResponseHead>
 </Document>
