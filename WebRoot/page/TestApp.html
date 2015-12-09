@@ -1,0 +1,584 @@
+<HTML>
+<meta http-equiv="Content-Type" content="text/html";charset=gb2312" />
+<HEAD>
+<TITLE>OCX</TITLE>
+
+<SCRIPT charset="gb2312" LANGUAGE="javascript" type="text/javascript">
+	
+function  CtrlStart()
+{
+	var nErr = WTwain_ActiveX.WTwainScanStart(0);
+	if(nErr == 14)
+	{
+		alert("授权文件不存在或路径不正确");
+	}
+}
+
+function  CtrlSelect()
+{
+	var nErr;
+	nErr = WTwain_ActiveX.WTSelectSource(0);
+	if(nErr == 1)
+	{
+		alert("初始化错误或指针、句柄为空");
+	}
+	else if(2 == nErr)
+	{
+		MessageBox(_T("DS打开失败"));
+	}
+	else if(3 == nErr)
+	{
+		alert("DSM打开失败");
+	}
+	else if(4 == nErr)
+	{
+		alert("使能DS失败");
+	}
+	else if(5 == nErr)
+	{
+		alert("没有指定的扫描仪");
+	}
+	else if(6 == nErr)
+	{
+		alert("数据源打开失败");
+	}
+	else if(7 == nErr)
+	{
+		alert("创建窗口句柄失败");
+	}
+	else if(8 == nErr)
+	{
+		alert("扫描取消");
+	}
+	else if(9 == nErr)
+	{
+		alert("非指定的扫描仪");
+	}
+	else if(10 == nErr)
+	{
+		alertT("加密锁读取错误");
+	}
+	else if(11 == nErr)
+	{
+		alert("扫描仪内没有纸");
+	}
+	else if(12 == nErr)
+	{
+		alert("未知错误");
+	}
+	else if(13 == nErr)
+	{
+		alert("扫描图片数目超过规定的上限");
+	}
+	else if(14 == nErr)
+	{
+		alert("授权文件不存在或路径不正确");
+	}
+}
+function ChViewMode()
+{
+	var i = document.form1.viewMode.selectedIndex;
+	var v = document.form1.viewMode.options[i].value;
+	WTwain_ActiveX.WTSetViewMode(v);
+	
+}
+function  CtrlScan()
+{
+  var nErr = WTwain_ActiveX.WTwainAcquireImage();
+  
+  	if(nErr == 1)
+	{
+		alert("初始化错误或指针、句柄为空");
+	}
+	else if(2 == nErr)
+	{
+		MessageBox(_T("DS打开失败"));
+	}
+	else if(3 == nErr)
+	{
+		alert("DSM打开失败");
+	}
+	else if(4 == nErr)
+	{
+		alert("使能DS失败");
+	}
+	else if(5 == nErr)
+	{
+		alert("没有指定的扫描仪");
+	}
+	else if(6 == nErr)
+	{
+		alert("数据源打开失败");
+	}
+	else if(7 == nErr)
+	{
+		alert("创建窗口句柄失败");
+	}
+	else if(8 == nErr)
+	{
+		alert("扫描取消");
+	}
+	else if(9 == nErr)
+	{
+		alert("非指定的扫描仪");
+	}
+	else if(10 == nErr)
+	{
+		alertT("加密锁读取错误");
+	}
+	else if(11 == nErr)
+	{
+		alert("扫描仪内没有纸");
+	}
+	else if(12 == nErr)
+	{
+		alert("未知错误");
+	}
+	else if(13 == nErr)
+	{
+		alert("扫描图片数目超过规定的上限");
+	}
+	else if(14 == nErr)
+	{
+		alert("授权文件不存在或路径不正确");
+	}
+}
+function  CtrlGetSerialNum()
+{
+	alert("序列号为："+WTwain_ActiveX.WTGetSerialNumber());	
+}
+function  CtrlEnd()
+{
+   var nErr = WTwain_ActiveX.WTwainScanEnd();
+    if(nErr == 1)
+	{
+		alert("初始化错误或指针、句柄为空");
+	}
+	else if(2 == nErr)
+	{
+		MessageBox(_T("DS打开失败"));
+	}
+	else if(3 == nErr)
+	{
+		alert("DSM打开失败");
+	}
+	else if(4 == nErr)
+	{
+		alert("使能DS失败");
+	}
+	else if(5 == nErr)
+	{
+		alert("没有指定的扫描仪");
+	}
+	else if(6 == nErr)
+	{
+		alert("数据源打开失败");
+	}
+	else if(7 == nErr)
+	{
+		alert("创建窗口句柄失败");
+	}
+	else if(8 == nErr)
+	{
+		alert("扫描取消");
+	}
+	else if(9 == nErr)
+	{
+		alert("非指定的扫描仪");
+	}
+	else if(10 == nErr)
+	{
+		alertT("加密锁读取错误");
+	}
+	else if(11 == nErr)
+	{
+		alert("扫描仪内没有纸");
+	}
+	else if(12 == nErr)
+	{
+		alert("未知错误");
+	}
+	else if(13 == nErr)
+	{
+		alert("扫描图片数目超过规定的上限");
+	}
+	else if(14 == nErr)
+	{
+		alert("授权文件不存在或路径不正确");
+	}
+}
+function  CtrlRemoveAll()
+{
+	WTwain_ActiveX.WTImageViewRemoveAll();
+}
+function  CtrlViewIndexInBuffer()
+{
+	var i = WTwain_ActiveX.WTImageViewIndexInBuffer();
+	alert("选中的图片在内存中的下标为：" + i);
+}
+function  CtrlFirstPage()
+{
+	WTwain_ActiveX.WTImageViewFirstPage();
+}
+function CtrlLastPage()
+{
+	WTwain_ActiveX.WTImageViewLastPage();
+}
+function CtrlPrePage()
+{
+	WTwain_ActiveX.WTImageViewPrePage();
+}
+function CtrlNextPage()
+{
+	WTwain_ActiveX.WTImageViewNextPage();
+}
+function SaveJpg()
+{
+	var i = document.form1.index.value;
+	var p = document.form1.path.value;
+	var re = WTwain_ActiveX.SaveAsJPEG(p,i);
+	
+	if(-1 == re)
+	{
+		alert("文件夹创建失败");
+	}
+	else if(-2 == re)
+	{
+		alert("指定的下标不存在");
+	}
+}
+function SaveTiff()
+{
+	var i = document.form1.index.value;
+	var p = document.form1.path.value;
+	var re = WTwain_ActiveX.SaveAsTIFF(p,i);
+	
+	if(-1 == re)
+	{
+		alert("文件夹创建失败");
+	}
+	else if(-2 == re)
+	{
+		alert("指定的下标不存在");
+	}
+}
+
+function SaveMaxInBuffer()
+{
+	var max = document.form1.maxInBuff.value;
+	WTwain_ActiveX.WTMaxImagesInBuffer(max);
+}
+
+function FTPSetParam()
+{
+	var UsNam = document.form1.FtpUserNam.value;
+	var Port = document.form1.FtpPort.value;
+	var ip = document.form1.IP.value;
+	var paswrd = document.form1.FtpPassWord.value;
+	var res = WTwain_ActiveX.FTPSetParemeter(UsNam,paswrd,Port,ip);
+	if(res == 0)
+	{
+		alert("设置失败");
+	}
+
+}
+
+function FTPTestConn()
+{
+	var res = WTwain_ActiveX.FTPTestConnection();
+	if(0 == res)
+	{
+		alertT("FTP连接失败");
+	}
+}
+function FTPUploadTiff()
+{
+	var rmtFile = document.form1.FTPRemoteFile.value;
+	var index = document.form1.ImageIndex.value;
+	var res = WTwain_ActiveX.FTPUploadAllAsTIFF(rmtFile,index);	
+	if(0 == res)
+	{
+		alert("FTP上传失败");
+	}
+	else if(-2 == res)
+	{
+		alert("指定的下标不存在");
+	}
+	else if(-3 == res)
+	{
+		alert("FTP链接异常");
+	}
+}
+
+function FTPUpLoadPdf()
+{
+	var rmtFile = document.form1.FTPRemoteFile.value;
+	var index = document.form1.ImageIndex.value;
+	var res = WTwain_ActiveX.FTPUploadAllAsPDF(rmtFile,index);
+	if(0 == res)
+	{
+		alert("FTP上传失败");
+	}
+	else if(-2 == res)
+	{
+		alert("指定的下标不存在");
+	}
+	else if(-3 == res)
+	{
+		alert("FTP链接异常");
+	}
+}
+
+function FTPUpLoadMultiTiff()
+{
+	var rmtFile = document.form1.FTPRemoteFile.value;
+	var res = WTwain_ActiveX.FTPUploadAsMultiPageTIFF(rmtFile);
+	
+	if(0 == res)
+	{
+		alert("FTP上传失败");
+	}
+	else if(-2 == res)
+	{
+		alert("生成多页tiff时出现异常");
+	}
+	else if(-3 == res)
+	{
+		alert("FTP链接异常");
+	}
+}
+
+function FTPUpLoadMultiPdf()
+{
+	var rmtFile = document.form1.FTPRemoteFile.value;
+	var res = WTwain_ActiveX.FTPUploadAsMultiPagePDF(rmtFile);
+
+	if(0 == res)
+	{
+		alert("FTP上传失败");
+	}
+	else if(-2 == res)
+	{
+		alert("生成多页pdf时出现异常");
+	}
+	else if(-3 == res)
+	{
+		alert("FTP链接异常");
+	}
+	
+}
+
+function HttpUploadTiff()
+{
+	var url = document.form1.strURL.value;
+	var index = document.form1.ImageIndex.value;
+	var res = WTwain_ActiveX.HTTPUploadPageTIFF(url,index);
+
+	if(-2 == res)
+	{
+		alert("指定的下标不存在");
+	}
+}
+
+function HttpUploadPdf()
+{
+	var url = document.form1.strURL.value;
+	var index = document.form1.ImageIndex.value;
+	var res = WTwain_ActiveX.HTTPUploadAsPDF(url,index);
+	if(-2 == res)
+	{
+		alert("指定的下标不存在");
+	}
+	
+}
+
+function HttpUploadMutiTiff()
+{
+	var url = document.form1.strURL.value;
+	var res = WTwain_ActiveX.HttpUploadMultiTIFF(url);
+	if(-2 == res)
+	{
+		alert("生成多页tiff的时候失败");
+	}
+}
+
+function HttpUploadMutiPdf()
+{
+	var url = document.form1.strURL.value;
+	var res = WTwain_ActiveX.HTTPUploadAsMultiPDF(url);
+	if(-1 == res)
+	{
+		alert("内存中没有图片");
+	}
+	else if(-2 == res)
+	{
+		alert("生成多页pdf失败");
+	}
+	
+}
+function PreviewZoomIn()
+{
+	var res = WTwain_ActiveX.WTPreviewZoomIn();
+	if(-2 == res)
+	{
+		alert("没有打开预览对话框显示图片");
+	}
+	else if(-1 == res)
+	{
+		alert("内存中没有图片");
+	}	
+}
+function PreviewFitPage()
+{
+	var res = WTwain_ActiveX.WTPreviewFitPage();
+	
+	if(-2 == res)
+	{
+		alert("没有打开预览对话框显示图片");
+	}
+	else if(-1 == res)
+	{
+		alert("内存中没有图片");
+	}
+}
+function PreviewActualSize()
+{
+	var res = WTwain_ActiveX.WTPreviewActualSize();
+	if(-2 == res)
+	{
+		alert("没有打开预览对话框显示图片");
+	}
+	else if(-1 == res)
+	{
+		alert("内存中没有图片");
+	}
+}
+function PreviewZoomOut()
+{
+	var res = WTwain_ActiveX.WTPreviewZoomOut();
+	if(-2 == res)
+	{
+		alert("没有打开预览对话框显示图片");
+	}
+	else if(-1 == res)
+	{
+		alert("内存中没有图片");
+	}
+}
+var format = function (number, form) {
+    var forms = form.split('.'), number = '' + number, numbers = number.split('.')
+        , leftnumber = numbers[0].split('')
+        , exec = function (lastMatch) {
+            if (lastMatch == '0' || lastMatch == '#') {
+                if (leftnumber.length) {
+                    return leftnumber.pop();
+                } else if (lastMatch == '0') {
+                    return lastMatch;
+                } else {
+                    return '';
+                }
+            } else {
+                return lastMatch;
+            }
+    }, string
+    
+    string = forms[0].split('').reverse().join('').replace(/./g, exec).split('').reverse().join('');
+    string = leftnumber.join('') + string;
+    
+    if (forms[1] && forms[1].length) {
+        leftnumber = (numbers[1] && numbers[1].length) ? numbers[1].split('').reverse() : [];
+        string += '.' + forms[1].replace(/./g, exec);
+    }
+	return string.replace(/\.$/, '');
+};
+</script>
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY >
+<!--table border="1">
+<tr>
+  <td-->
+<form  method="post" name=form1 class=gg>
+	<DIV STYLE="padding:10px; background-color:#eeeeee; border:2px solid #cccccc"> 
+		<input   type="button"   onclick="CtrlStart();"  value="Start"  ID="BtnStart">
+		<input   type="button"   onclick="CtrlSelect();"  value="Select"  ID="BtnSelect">
+		<input   type="button"   onclick="CtrlScan();"  value="Scan"  ID="BtnScan">
+		<input   type="button"   onclick="CtrlRemoveAll();"  value="RemoveAll"  ID="BtnRemoveAll">
+		<input   type="button"   onclick="CtrlEnd();"  value="End"  ID="BtnEnd">
+		<!--input type="button" onclick="" value="setViewMode" ID="BtnViewMode"-->
+		 view Modde: <select id="viewMode" name="viewMode" onchange="ChViewMode(this.options.selected)">
+			<option value="1">1*1</option>
+			<option value="2">2*2</option>
+			<option value="3">3*3</option>
+			<option value="4">4*4</option>
+			<option value="5">5*5</option>
+		</select>
+	</DIV>
+	<DIV STYLE="padding:10px; background-color:#eeeeee; border:2px solid #cccccc">
+		<input type="button" onclick="CtrlViewIndexInBuffer()" value="viewIndexInBuffer" ID="BtnviewIndexInBuffer">
+		<input   type="button"   onclick="CtrlGetSerialNum();"  value="GetSerialNum"  ID="BtnGetSerialNum">
+		<!--input type="button" onclick="CtrlFirstPage()" value="FirstPage" ID="BtnFirstPage"-->
+	</DIV>
+	<DIV>
+	<input type="button" onclick="CtrlFirstPage()" value="FirstPage" ID="BtnFirstPage">
+	<input type="button" onclick="CtrlLastPage()" value="LastPage" ID="BtnLastPage">
+	<input type="button" onclick="CtrlPrePage()" value="PrePage" ID="BtnPrePage">
+	<input type="button" onclick="CtrlNextPage()" value="NextPage" ID="BtnNextPage">
+	</DIV>
+	<DIV>
+	<input type="button" onclick="SaveJpg()" value="SaveJpg" id="BtnSaveJpg">
+	savePath:<input name="path" type="text" size="50" maxlength="256">
+	saveIndex:<input name="index" type="text" size="5" maxlength="50">
+	<input type="button" onclick="SaveTiff()" value="SaveTiff" id="BtnSaveTiff">
+	</DIV>
+	<div>
+	MaxInBuffer:<input name="maxInBuff" type="text" size="10">
+	<input type="button" onclick="SaveMaxInBuffer()" value="SaveMaxInBuffer" id="BtnSaveMaxInBuff">
+	</div>
+	<div>
+	FtpUserName:<input name="FtpUserNam" type="text" size="20" maxlength="256">
+	FtpPort:<input name="FtpPort" type="text" size="6" maxlength="12">
+	FtpPassWord:<input name="FtpPassWord" type="text" size=" 20" maxlength="256">
+	IP:<input name="IP" type="text" size=" 17" maxlength="17">
+	FTPRemoteFile:<input name="FTPRemoteFile" type="text" size=" 30" maxlength="256*2">
+	</div>
+	<div>
+		ImageIndex:<input name="ImageIndex" type="text" size="5" maxlength="50">
+		strURL:<input name="strURL" type="text" size="100" maxlength="256*5">
+	</div>
+	<div>
+		<input type="button" onclick="FTPSetParam()" value="FTPSetParam" id="BtnFTPSetParam">
+		<input type="button" onclick="FTPTestConn()" value="FTPTestConnect" id="BtnFTPTestConn">
+		<input type="button" onclick="FTPUploadTiff()" value="FTPUploadTiff" id="BtnFTPUploadTiff">
+		<INPUT TYPE="BUTTON" ONCLICK="FTPUpLoadPdf()" VALUE="FTPUpLoadPdf" ID="BtnFTPUpLoadPdf">
+		<input type="button" onclick="FTPUpLoadMultiTiff()" value="FTPUpLoadMultiTiff" id="BtnFTPUpLoadMultiTiff">
+		<input type="button" onclick="FTPUpLoadMultiPdf()" value="FTPUpLoadMultiPdf" id="BtnFTPUpLoadMultiPdf">
+	</div>
+	<div>
+		<input type="button" onclick="HttpUploadTiff()" value="HttpUploadTiff" id="BtnHttpUploadTiff">
+		<input type="button" onclick="HttpUploadPdf()" value="HttpUploadPdf" id="BtnHttpUploadPdf">
+		<input type="button" onclick="HttpUploadMutiTiff()" value="HttpUploadMutiTiff" id="BtnHttpUploadMutiTiff">
+		<input type="button" onclick="HttpUploadMutiPdf()" value="HttpUploadMutiPdf" id="HttpUploadMutiPdf">
+	</div>
+	<div>
+		<input type="button" onclick="PreviewZoomIn()" value="PreviewZoomIn" id="BtnPreviewZoomIn">
+		<input type="button" onclick="PreviewFitPage()" value="PreviewFitPage" id="BtnPreviewFitPage">
+		<input type="button" onclick="PreviewActualSize()" value="PreviewActualSize" id="BtnPreviewActualSize">
+		<input type="button" onclick="PreviewZoomOut()" value="PreviewZoomOut" id="BtnPreviewZoomOut">
+	</div>
+</form>
+
+      <OBJECT ID= "WTwain_ActiveX" 
+          CLASSID="CLSID:A67D008F-E6F9-487E-BD1B-A67380D47058" 
+          width=400 
+          height=400>	
+      </OBJECT>
+<!--/td>
+</tr>
+</table--> 
+</BODY>
+</HTML>
+
